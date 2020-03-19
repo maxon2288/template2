@@ -29,27 +29,96 @@
     opacity: 0;    
     transition: 0.2s;
 	visibility: hidden;
-	display: none;
+	transition: 0.2s;
+	display: flex;
+	flex-direction: column;	
+	&:before {
+		content: '';
+		border-radius: 12px;
+		position: absolute;
+		top: 0;
+		background-color: #fff;
+		left: 0;
+		right: 0;
+		bottom: 0;
+
+	}
     &.active {
-		display: flex;
-		flex-direction: column;	
+		
         opacity: 1;
         visibility: visible;
-    }
+	}
+	img {
+		&:first-child {
+			z-index: -1;
+			position: absolute;
+			top: 0;
+			left: 0;
+			transform: translate(-50%, -50%); 
+		}
+		&:nth-child(2) {
+			z-index: -1;
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			transform: translate(+50%, +50%);
+		}
+	}
 }
 
-.modal-close {
-    cursor: pointer;
+.modal__close {
+	cursor: pointer;
+	svg {
+		transition: 0.2s;
+	}
+	&:hover {
+		svg {
+			transform: rotate(90deg);
+		}
+	}
 }
 
 .modal-1 {
-    width: 822px;
-    padding: 40px 45px;
-    background: #FFFFFF;
-    border-radius: 2px;
-	position: absolute;
-	box-sizing: border-box;
-    margin: 50px 0;
+	position: fixed;
+	// margin: 0 50px;
+	width: calc(100% - 100px);
+    max-width: 822px;
+	// background: #FFFFFF;
+	box-shadow: 0px 4px 100px rgba(0, 0, 0, 0.15);
+	border-radius: 24px;
+	padding: 66px 130px;
+	@media screen and (max-width: 767px) {
+		padding: 20px 40px;
+	}
+}
+
+.blur {
+	padding: 0 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.modal {
+	&__close {
+		position: absolute;
+		right: 20px;
+		top: 20px;
+	}
+	&__title {
+		font-family: "philosopher";
+		font-style: normal;
+		font-weight: bold;
+		font-size: 52px;
+		line-height: 58px;
+		text-align: center;
+		color: #74953D;
+		z-index: posr;
+		z-index: 1;
+		@media screen and (max-width: 767px) {
+			font-size: 26px;
+			line-height: 30px;
+		}
+	}
 }
 
 .modal-2 {
@@ -60,6 +129,10 @@
 	position: absolute;
 	box-sizing: border-box;
     margin: 50px 0;
+}
+
+.blur {
+	z-index: 50;
 }
 
 

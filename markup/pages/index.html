@@ -5,11 +5,614 @@
 </head>
 <body class="page" style="visibility: hidden;opacity: 0;">
     %=symbols=%
-    {{> header/header}}
 
-    <div class="wrapper">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta, labore.
+    {{> header/header-2}}
+    
+    <div class="section first section-1">
+        <div class="first-bg first-bg-1">
+                <img data-src='static/img/content/first-bg-1-1.png'>
+        </div>
+        <!-- <div class="first-bg first-bg-2">
+            <img data-src='static/img/content/first-bg-1-2.png'>
+        </div> -->
+        <div class="first__logo">
+            <img class="first__logo-img" data-src='static/img/content/first-logo.png'>
+            <img class="first__branch first__branch-1" data-src='static/img/content/branch-1.png'>
+            <img class="first__branch first__branch-2" data-src='static/img/content/branch-2.png'>
+            <img class="first__branch first__branch-3" data-src='static/img/content/cloud-1.png'>
+        </div>
+
+        {{Icon iconName="mouse" className="first-mouse"}}
     </div>
+
+    <div class="section block first section-2">
+        <img data-src='static/img/content/branch-5.png' class="branch-parallax">
+
+        <div class="wrapper">
+            <div class="block__content first__content">
+                <div class="block__warm">
+                    <img data-src='static/img/content/first-overlay.png'>
+                </div>
+                <div class="block__title">
+                        Biomio - продукты, созданные самой природой
+                </div>
+                <div class="block__desc">
+                        BioMio – российская торговая марка экологической бытовой химии, принадлежащая компании ООО «Сплат-Косметика».
+                </div>
+                <div class="block__items">
+                    <div class="block__item">
+                        <div class="block__img">
+                            {{Icon iconName="first-1"}}
+                        </div>
+                        <div class="block__item-text">
+                            С заботой 
+                            о здоровье близких
+                        </div>
+                    </div>
+                    <div class="block__item">
+                        <div class="block__img">
+                            {{Icon iconName="first-1"}}
+                        </div>
+                        <div class="block__item-text">
+                            С заботой 
+                            о здоровье близких
+                        </div>
+                    </div>
+                    <div class="block__item">
+                        <div class="block__img">
+                            {{Icon iconName="first-1"}}
+                        </div>
+                        <div class="block__item-text">
+                            С заботой 
+                            о здоровье близких
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img class="info__branch" data-src='static/img/content/branch-3.png'>
+
+    </div>
+
+    <div class="section info">
+        <div class="m-bg-cont">
+            <img data-src='static/img/content/info-bg.png'>
+        </div>
+        <div class="info__slider">
+            <div class="wrapper">
+                <div class="info__slider-container">
+                    <div class="block__left">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="info__wrapper">
+            <div class="info__ctg block__slider ">
+                <img class="info__content-img" data-src='static/img/content/info-content.png'>
+
+                <div class="swiper-wrapper">
+                    <div class="info__ctg-item swiper-slide">
+                        <div class="info__ctg-img">
+                            <img data-src='static/img/content/ctg-3.png'>
+                        </div>
+                        <div class="info__ctg-text">
+                            <div class="block__slider-button block-prev">
+                                {{Icon iconName="block-icon"}}
+                            </div>
+                            <span>Для детей</span>
+                            <div class="block__slider-button block-next">
+                                {{Icon iconName="block-icon"}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info__ctg-item swiper-slide">
+                        <div class="info__ctg-img">
+                            <img data-src='static/img/content/ctg-4.png'>
+                        </div>
+                        <div class="info__ctg-text">
+                            <div class="block__slider-button block-prev">
+                                {{Icon iconName="block-icon"}}
+                            </div>
+                            <span>
+                                мытье посуды 
+                            </span>
+                            <div class="block__slider-button block-next">
+                                {{Icon iconName="block-icon"}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info__ctg-item swiper-slide">
+                        <div class="info__ctg-img">
+                            <img data-src='static/img/content/ctg-1.png'>
+                        </div>
+                        <div class="info__ctg-text">
+                            <div class="block__slider-button block-prev">
+                                {{Icon iconName="block-icon"}}
+                            </div>
+                            <span>
+                                Уход за кожей рук
+                            </span>
+                            <div class="block__slider-button block-next">
+                                {{Icon iconName="block-icon"}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info__ctg-item swiper-slide">
+                        <div class="info__ctg-img">
+                            <img data-src='static/img/content/ctg-2.png'>
+                        </div>
+                        <div class="info__ctg-text">
+                            <div class="block__slider-button block-prev">
+                                {{Icon iconName="block-icon"}}
+                            </div>
+                            <span>
+                                Уборка
+
+                            </span>
+                            <div class="block__slider-button block-next">
+                                {{Icon iconName="block-icon"}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info__ctg-item swiper-slide">
+                        <div class="info__ctg-img">
+                            <img data-src='static/img/content/ctg-5.png'>
+                        </div>
+                        <div class="info__ctg-text">
+                            <div class="block__slider-button block-prev">
+                                {{Icon iconName="block-icon"}}
+                            </div>
+                            <span>
+                                Стирка
+                            </span>
+                            <div class="block__slider-button block-next">
+                                {{Icon iconName="block-icon"}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="info__container info__slider">
+            <div class="info__slides-container">
+
+                <div class="info__slide">
+                    <div class="m-bg-cont">
+                        <img data-src='static/img/content/info-1.jpg'>
+                    </div>
+                    <div class="wrapper">
+                        <div class="info__left">
+                            <img data-src='static/img/content/info-1.png'>
+                        </div>
+                        <div class="info__right">
+                            <div class="block__title">
+                                    Для детей
+                            </div>
+                            <div class="block__desc">
+                                    BioMio – российская торговая марка экологической бытовой химии, принадлежащая компании ООО «Сплат-Косметика». Под торговой маркой выпускаются средства для стирки белья, таблетки для посудомоечных машин, средства для мытья посуды. 
+                            </div>
+                            <div class="info__items">
+                                <div class="info__item">
+                                        {{Icon iconName="info-1"}}
+                                    <div class="info__item-text">
+                                            99% 
+                                            натуральности
+                                    </div>
+                                </div>
+                                <div class="info__item">
+                                        {{Icon iconName="info-2"}}
+                                    <div class="info__item-text">
+                                            99% 
+                                            натуральности
+                                    </div>
+                                </div>
+                                <div class="info__item">
+                                        {{Icon iconName="info-3"}}
+                                    <div class="info__item-text">
+                                            99% 
+                                            натуральности
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="info__button">
+                                    Смотреть все товары
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info__slide">
+                    <div class="wrapper">
+                        <div class="info__left">
+                            <img data-src='static/img/content/info-2.png'>
+                        </div>
+                        <div class="info__right">
+                            <div class="block__title">
+                                    Мытье посуды
+                            </div>
+                            <div class="block__desc">
+                                    BioMio – российская торговая марка экологической бытовой химии, принадлежащая компании ООО «Сплат-Косметика». Под торговой маркой выпускаются средства для стирки белья, таблетки для посудомоечных машин, средства для мытья посуды. 
+                            </div>
+                            <div class="info__items">
+                                <div class="info__item">
+                                        {{Icon iconName="info-1"}}
+                                    <div class="info__item-text">
+                                            99% 
+                                            натуральности
+                                    </div>
+                                </div>
+                                <div class="info__item">
+                                        {{Icon iconName="info-2"}}
+                                    <div class="info__item-text">
+                                            99% 
+                                            натуральности
+                                    </div>
+                                </div>
+                                <div class="info__item">
+                                        {{Icon iconName="info-3"}}
+                                    <div class="info__item-text">
+                                            99% 
+                                            натуральности
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="info__button">
+                                    Смотреть все товары
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info__slide">
+                    <div class="wrapper">
+                        <div class="info__left">
+                            <img data-src='static/img/content/info-3.png'>
+                        </div>
+                        <div class="info__right">
+                            <div class="block__title">
+                                    Уход за кожей рук
+                            </div>
+                            <div class="block__desc">
+                                    BioMio – российская торговая марка экологической бытовой химии, принадлежащая компании ООО «Сплат-Косметика». Под торговой маркой выпускаются средства для стирки белья, таблетки для посудомоечных машин, средства для мытья посуды. 
+
+                            </div>
+                            <div class="info__items">
+                                <div class="info__item">
+                                        {{Icon iconName="info-1"}}
+                                    <div class="info__item-text">
+                                            99% 
+                                            натуральности
+                                    </div>
+                                </div>
+                                <div class="info__item">
+                                        {{Icon iconName="info-2"}}
+                                    <div class="info__item-text">
+                                            99% 
+                                            натуральности
+                                    </div>
+                                </div>
+                                <div class="info__item">
+                                        {{Icon iconName="info-3"}}
+                                    <div class="info__item-text">
+                                            99% 
+                                            натуральности
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="info__button">
+                                    Смотреть все товары
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info__slide">
+                    <div class="wrapper">
+                        <div class="info__left">
+                            <img data-src='static/img/content/info-4.png'>
+                        </div>
+                        <div class="info__right">
+                            <div class="block__title">
+                                    Уборка
+                            </div>
+                            <div class="block__desc">
+                                    BioMio – российская торговая марка экологической бытовой химии, принадлежащая компании ООО «Сплат-Косметика». Под торговой маркой выпускаются средства для стирки белья, таблетки для посудомоечных машин, средства для мытья посуды. 
+
+                            </div>
+                            <div class="info__items">
+                                <div class="info__item">
+                                        {{Icon iconName="info-1"}}
+                                    <div class="info__item-text">
+                                            99% 
+                                            натуральности
+                                    </div>
+                                </div>
+                                <div class="info__item">
+                                        {{Icon iconName="info-2"}}
+                                    <div class="info__item-text">
+                                            99% 
+                                            натуральности
+                                    </div>
+                                </div>
+                                <div class="info__item">
+                                        {{Icon iconName="info-3"}}
+                                    <div class="info__item-text">
+                                            99% 
+                                            натуральности
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="info__button">
+                                    Смотреть все товары
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info__slide">
+                    <div class="wrapper">
+                        <div class="info__left">
+                            <img data-src='static/img/content/info-5.png'>
+                        </div>
+                        <div class="info__right">
+                            <div class="block__title">
+                                    Стирка
+                            </div>
+                            <div class="block__desc">
+                                    BioMio – российская торговая марка экологической бытовой химии, принадлежащая компании ООО «Сплат-Косметика». Под торговой маркой выпускаются средства для стирки белья, таблетки для посудомоечных машин, средства для мытья посуды. 
+
+                            </div>
+                            <div class="info__items">
+                                <div class="info__item">
+                                        {{Icon iconName="info-1"}}
+                                    <div class="info__item-text">
+                                            99% 
+                                            натуральности
+                                    </div>
+                                </div>
+                                <div class="info__item">
+                                        {{Icon iconName="info-2"}}
+                                    <div class="info__item-text">
+                                            99% 
+                                            натуральности
+                                    </div>
+                                </div>
+                                <div class="info__item">
+                                        {{Icon iconName="info-3"}}
+                                    <div class="info__item-text">
+                                            99% 
+                                            натуральности
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="info__button">
+                                    Смотреть все товары
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="info__close">
+                {{Icon iconName="close-info"}}
+            </div>
+
+            <div class="info__nav">
+                <a href="#" class="info__nav-link">    Для детей</a>
+                <a href="#" class="info__nav-link">Мытье посуды</a>
+                <a href="#" class="info__nav-link">Уход за кожей рук</a>
+                <a href="#" class="info__nav-link">Уборка</a>
+                <a href="#" class="info__nav-link">Стирка</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="section care">
+        <div class="wrapper">
+            <div class="care__container">
+                <div class="care__top">
+                        BioMio - это забота
+                </div>
+                <div class="care__content">
+                    <div class="care__item care__item-1">
+                        <div class="care__item-img">
+                            <img data-src='static/img/content/care-item-1.png'>
+                        </div>
+                        <div class="care__item-title">
+                                О природе
+                        </div>
+                        <div class="care__item-desc">
+                                Мы стремимся к максимальной экологичности. Составы имеют от 90 до 99% компонентов натурального происхождения. А упаковка сделана из биоразлагаемого пластика.
+                        </div>
+                    </div>
+                    <div class="care__item care__item-2">
+                        <div class="care__item-img">
+                            <img data-src='static/img/content/care-item-2.png'>
+                        </div>
+                        <div class="care__item-title">
+                            О близких
+                        </div>
+                        <div class="care__item-desc">
+                            Средства BioMio подойдут для самых маленьких членов семьи. Они, гипоаллергенны, одобрены дерматологами и подходят для людей с чувствительной кожей.
+                        </div>
+                    </div>
+                    <div class="care__item care__item-3">
+                        <div class="care__item-img">
+                            <img data-src='static/img/content/care-item-3.png'>
+                        </div>
+                        <div class="care__item-title">
+                            О себе
+                        </div>
+                        <div class="care__item-desc">
+                            Наша продукция содержит натуральные эфирные масла, имеет удобные дозаторы и работает в холодной воде. Все, чтобы ваша уборка была не только эффективной, но и приятной.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section mama">
+        <img data-src='static/img/content/branch-6.png' class="branch-parallax-left">
+        <div class="m-bg-cont">
+            <img data-src='static/img/content/mamaa.png'>
+        </div>
+        <div class="wrapper">
+            <div class="mama__container">
+                <div class="mama__left">
+                    <img class="mama-parallax" data-src='static/img/content/mama-left-1.png'>
+                </div>
+                <div class="mama__right">
+                    <div class="mama__title">
+                            Мама что-нибудь придумает
+                    </div>
+                    <div class="mama__desc">
+                            Как совмещать ребёнка и уборку 
+                            и другие истории про философию создания BioMio
+                    </div>
+                    <div class="mama__button">
+                            Подробнее о BioMio
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section map" id="map">
+        <div class="m-bg-cont">
+            <img data-src='static/img/content/care-1.png'>
+        </div>
+        <div class="wrapper">
+            <div class="map__top">
+                <div class="map__title">
+                        Где купить
+                </div>        
+                <div class="map__links">
+                    <a href="#" class="active">в магазине</a>
+                    <a href="#">в интернете</a>
+                </div>
+            </div>
+            <input type="name" class="map__field" placeholder="Введите ближайший к вам адрес">
+            
+        </div>
+        <div class="map__map">
+                <div class="ymap" id="ya" data-x="55.234774" data-y="61.437345"></div>
+        </div>
+
+    </div>
+    
+    
+
+    <div class="markers">
+        <img data-src='static/img/content/branch-4.png' class="branch-parallax">
+        <div class="m-bg-cont">
+            <img data-src='static/img/content/care-1.png'>
+        </div>
+        <div class="wrapper">
+            <div class="markers__container">
+                <div class="markers__item">
+                    <div class="markers__img">
+                        {{Icon iconName="marker"}}
+                    </div>
+                    <div class="markers__item-content">
+                        <div class="markers__title">
+                            Азбука вкуса
+                        </div>
+                        <div class="markers__desc">
+                            Москва, ул. Автозаводская, 12А
+                        </div>
+                    </div>
+                </div>
+                <div class="markers__item">
+                    <div class="markers__img">
+                        {{Icon iconName="marker"}}
+                    </div>
+                    <div class="markers__item-content">
+                        <div class="markers__title">
+                                Аспект
+                        </div>
+                        <div class="markers__desc">
+                                Москва, ул. Маросейка, 15
+                        </div>
+                    </div>
+                </div>
+                <div class="markers__item">
+                    <div class="markers__img">
+                        {{Icon iconName="marker-1"}}
+                    </div>
+                    <div class="markers__item-content">
+                        <div class="markers__title">
+                                Утконос
+                        </div>
+                        <div class="markers__link">
+                            {{Icon iconName="link"}}
+                                utkonos.ru
+                        </div>
+                    </div>
+                </div>
+                <div class="markers__item">
+                    <div class="markers__img">
+                        {{Icon iconName="marker"}}
+                    </div>
+                    <div class="markers__item-content">
+                        <div class="markers__title">
+                                Столичные аптеки
+                        </div>
+                        <div class="markers__desc">
+                                Москва, ул. Арбат, 15
+                        </div>
+                    </div>
+                </div>
+                <div class="markers__item">
+                    <div class="markers__img">
+                        {{Icon iconName="marker"}}
+                    </div>
+                    <div class="markers__item-content">
+                        <div class="markers__title">
+                                L'Occitane
+                        </div>
+                        <div class="markers__desc">
+                                Санкт-Петербург, ул. Марата, 8
+                        </div>
+                    </div>
+                </div>
+                <div class="markers__item">
+                    <div class="markers__img">
+                        <img data-src='static/img/content/marker-1.png'>
+                    </div>
+                    <div class="markers__item-content">
+                        <div class="markers__title">
+                                Интернет-маркет ОЗОН
+                        </div>
+                        <a href="#" class="markers__link">
+                            {{Icon iconName="link"}}
+                                ozon.ru
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    {{> share/share}}
+
+
+    
 
     {{> footer/footer}}
 

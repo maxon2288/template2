@@ -1,20 +1,35 @@
 // main style file by Maxim Sinukov
-
+html {
+    scroll-behavior: smooth;
+}
 html, body {
     overflow-x: hidden;
     &.no-scroll {
 		overflow: hidden;
-	}
+    }
 }
+
 body {
-    font-family: 'museosanscyrl';
+    font-family: 'opensans', sans-serif;
     color: #353535;
     margin: 0 !important;
     transition: 0.3s;
     font-weight: 500;
-    min-height: 100vh;
+    overflow: hidden;
+    height: auto;
     display: flex;
     flex-direction: column;
+    position: relative;
+    &:before {
+        background-image: url("../img/content/care-1.jpg");
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+    }
 }
 .collapsible-body {
     overflow: hidden;
@@ -79,24 +94,32 @@ body {
 }
 
 .wrapper {
-    max-width: 1266px;
+    max-width: 1280px;
     width: 100%;
     margin: 0 auto;
     display: flex;
+    position: relative;
+    z-index: 20;
     flex-wrap: wrap;
-    // @media screen and (max-width: 1430px) {
-    //     max-width: 1100px;
-    // }
-    // @media screen and (max-width: 1279px) {
-    //     max-width: 900px;
-    // }
-    // @media screen and (max-width: 1023px) {
-    //     max-width: 700px;
-    // }
-    // @media screen and (max-width: 768px) {
-    //     max-width: 580px;
-    //     padding: 0 15px;
-    // }
+    @media screen and (max-width: 1300px) {
+        max-width: 1024px;
+    }
+    @media screen and (max-width: 1100px) {
+        max-width: 900px;
+    }
+    @media screen and (max-width: 1023px) {
+        max-width: 700px;
+    }
+    @media screen and (max-width: 768px) {
+        max-width: calc(580px - 30px);
+        padding: 0 30px;
+    }
+    @media screen and (max-width: 767px) {
+        max-width: 100%;
+    }
+    @media screen and (max-width: 1023px) {
+        
+    }
 }
 
 .swiper-container {
@@ -107,7 +130,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    img {
+    img:nth-child(1) {
         display: none;
     }
 }
@@ -211,7 +234,6 @@ a {
     font-weight: 400;
 }
 
-
 .noUi-tooltip {
     span {
         display: none;
@@ -243,10 +265,17 @@ a {
     overflow: hidden;
 }
 
-.ymap {
+.fdfsd {
     height: 100%;   
     width: 60vw;
     position: absolute;
     top: 0;
     left: 0;
+}
+.main-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 72px;
+    line-height: 72px;
+    color: #FFFFFF;
 }
